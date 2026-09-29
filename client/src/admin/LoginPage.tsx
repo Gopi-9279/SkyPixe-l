@@ -4,8 +4,8 @@ import { useAuth } from '../context/AuthContext.js';
 import { Lock, Mail, ArrowRight, ShieldAlert, Check } from 'lucide-react';
 
 export const LoginPage: React.FC = () => {
-  const [email, setEmail] = useState('admin@skypixel.com');
-  const [password, setPassword] = useState('Skypixel2026!');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
