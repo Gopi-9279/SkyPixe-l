@@ -31,6 +31,7 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
+    <>
     <header
       style={{
         position: 'fixed',
@@ -145,6 +146,15 @@ export const Navbar: React.FC = () => {
         </button>
       </div>
 
+      <style>{`
+        @media (min-width: 860px) {
+          .desktop-nav { display: flex !important; }
+          .desktop-cta { display: flex !important; }
+          .mobile-toggle { display: none !important; }
+        }
+      `}</style>
+    </header>
+
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div
@@ -186,15 +196,7 @@ export const Navbar: React.FC = () => {
           </Link>
         </div>
       )}
-
-      <style>{`
-        @media (min-width: 860px) {
-          .desktop-nav { display: flex !important; }
-          .desktop-cta { display: flex !important; }
-          .mobile-toggle { display: none !important; }
-        }
-      `}</style>
-    </header>
+    </>
   );
 };
 
