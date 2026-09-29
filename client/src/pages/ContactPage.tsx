@@ -320,11 +320,18 @@ export const ContactPage: React.FC = () => {
                       onChange={handleChange}
                       className="form-select"
                     >
+                      <option value="engagement">Engagement</option>
+                      <option value="prewedding">Prewedding</option>
                       <option value="wedding">Wedding</option>
-                      <option value="hotel">Hotel & Luxury Resort</option>
-                      <option value="birthday">Birthday / Anniversary</option>
-                      <option value="corporate">Corporate Summit / Gala</option>
-                      <option value="other">Aerial / Commercial / Other</option>
+                      <option value="postwedding">Postwedding</option>
+                      <option value="anniversery">Anniversery</option>
+                      <option value="birthday">Birthday</option>
+                      <option value="maternity_baby_shoot">Maternity / Baby Shoot</option>
+                      <option value="brand_promotion">Brand Promotion</option>
+                      <option value="conference_shoot">Conference shoot</option>
+                      <option value="model_portfolio">Model Portfolio</option>
+                      <option value="music_video_shoot">Music Video Shoot</option>
+                      <option value="event_drone_coverage">Event Shoot/Drone coverage</option>
                     </select>
                   </div>
 

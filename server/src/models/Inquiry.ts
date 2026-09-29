@@ -6,7 +6,19 @@ export interface IInquiry extends Document {
   name: string;
   email: string;
   phone: string;
-  eventType: 'wedding' | 'hotel' | 'birthday' | 'corporate' | 'other';
+  eventType:
+    | 'engagement'
+    | 'prewedding'
+    | 'wedding'
+    | 'postwedding'
+    | 'anniversery'
+    | 'birthday'
+    | 'maternity_baby_shoot'
+    | 'brand_promotion'
+    | 'conference_shoot'
+    | 'model_portfolio'
+    | 'music_video_shoot'
+    | 'event_drone_coverage';
   eventDate?: Date;
   venue?: string;
   message: string;
@@ -22,7 +34,20 @@ const InquirySchema = new Schema<IInquiry>(
     eventType: {
       type: String,
       required: true,
-      enum: ['wedding', 'hotel', 'birthday', 'corporate', 'other'],
+      enum: [
+        'engagement',
+        'prewedding',
+        'wedding',
+        'postwedding',
+        'anniversery',
+        'birthday',
+        'maternity_baby_shoot',
+        'brand_promotion',
+        'conference_shoot',
+        'model_portfolio',
+        'music_video_shoot',
+        'event_drone_coverage',
+      ],
     },
     eventDate: { type: Date },
     venue: { type: String, trim: true, default: '' },

@@ -16,11 +16,18 @@ export const PortfolioPage: React.FC = () => {
 
   const categories = [
     { id: 'all', label: 'All Portfolios' },
-    { id: 'wedding', label: 'Weddings' },
-    { id: 'hotel', label: 'Hotels & Resorts' },
-    { id: 'birthday', label: 'Birthdays' },
-    { id: 'corporate', label: 'Corporate' },
-    { id: 'other', label: 'Aerial & Commercial' },
+    { id: 'engagement', label: 'Engagement' },
+    { id: 'prewedding', label: 'Prewedding' },
+    { id: 'wedding', label: 'Wedding' },
+    { id: 'postwedding', label: 'Postwedding' },
+    { id: 'anniversery', label: 'Anniversery' },
+    { id: 'birthday', label: 'Birthday' },
+    { id: 'maternity_baby_shoot', label: 'Maternity / Baby Shoot' },
+    { id: 'brand_promotion', label: 'Brand Promotion' },
+    { id: 'conference_shoot', label: 'Conference Shoot' },
+    { id: 'model_portfolio', label: 'Model Portfolio' },
+    { id: 'music_video_shoot', label: 'Music Video Shoot' },
+    { id: 'event_drone_coverage', label: 'Event Shoot/Drone coverage' },
   ];
 
   useEffect(() => {

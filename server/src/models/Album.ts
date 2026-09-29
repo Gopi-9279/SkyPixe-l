@@ -1,7 +1,18 @@
 import mongoose, { Document, Schema, Types } from 'mongoose';
 
-export type AlbumCategory = 'wedding' | 'hotel' | 'birthday' | 'corporate' | 'other';
-
+export type AlbumCategory =
+  | 'engagement'
+  | 'prewedding'
+  | 'wedding'
+  | 'postwedding'
+  | 'anniversery'
+  | 'birthday'
+  | 'maternity_baby_shoot'
+  | 'brand_promotion'
+  | 'conference_shoot'
+  | 'model_portfolio'
+  | 'music_video_shoot'
+  | 'event_drone_coverage';
 export interface IAlbum extends Document {
   title: string;
   slug: string;
@@ -23,7 +34,20 @@ const AlbumSchema = new Schema<IAlbum>(
     category: {
       type: String,
       required: true,
-      enum: ['wedding', 'hotel', 'birthday', 'corporate', 'other'],
+      enum: [
+        'engagement',
+        'prewedding',
+        'wedding',
+        'postwedding',
+        'anniversery',
+        'birthday',
+        'maternity_baby_shoot',
+        'brand_promotion',
+        'conference_shoot',
+        'model_portfolio',
+        'music_video_shoot',
+        'event_drone_coverage',
+      ],
     },
     description: { type: String, default: '' },
     eventDate: { type: Date },

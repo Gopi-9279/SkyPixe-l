@@ -73,8 +73,8 @@ export const ServicesPage: React.FC = () => {
       popular: true,
     },
     {
-      category: 'hotel',
-      title: 'Hotels, Resorts & Architecture',
+      category: 'brand_promotion',
+      title: 'Brand Promotion',
       tagline: 'Visual branding designed to accelerate bookings and prestige.',
       highlights: [
         'FPV drone fly-throughs transitioning from exterior horizon to presidential suites',
@@ -88,7 +88,7 @@ export const ServicesPage: React.FC = () => {
     },
     {
       category: 'birthday',
-      title: 'Milestone Birthdays & Galas',
+      title: 'Birthday',
       tagline: 'Capturing candid joy, bespoke themes, and high-energy nightlife.',
       highlights: [
         'Full coverage of theme decor, balloon art, and cake-cutting moments',
@@ -101,8 +101,8 @@ export const ServicesPage: React.FC = () => {
       popular: false,
     },
     {
-      category: 'corporate',
-      title: 'Corporate Summits & Keynotes',
+      category: 'conference_shoot',
+      title: 'Conference Shoot',
       tagline: 'Polished media production for global enterprises and multi-day conferences.',
       highlights: [
         'Multi-stage audio & multi-camera 4K video recording',

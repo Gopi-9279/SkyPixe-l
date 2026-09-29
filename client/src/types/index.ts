@@ -1,4 +1,16 @@
-export type EventCategory = 'wedding' | 'hotel' | 'birthday' | 'corporate' | 'other';
+export type EventCategory =
+  | 'engagement'
+  | 'prewedding'
+  | 'wedding'
+  | 'postwedding'
+  | 'anniversery'
+  | 'birthday'
+  | 'maternity_baby_shoot'
+  | 'brand_promotion'
+  | 'conference_shoot'
+  | 'model_portfolio'
+  | 'music_video_shoot'
+  | 'event_drone_coverage';
 
 export interface MediaItem {
   _id: string;

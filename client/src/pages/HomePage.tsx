@@ -91,25 +91,25 @@ export const HomePage: React.FC = () => {
   const categories = [
     {
       id: 'wedding',
-      name: 'Weddings',
+      name: 'Wedding',
       tag: 'Sacred Vows & Heritage Grandeur',
       img: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop',
     },
     {
-      id: 'hotel',
-      name: 'Hotels & Luxury Resorts',
+      id: 'brand_promotion',
+      name: 'Brand Promotion',
       tag: 'Architectural Elegance & Hospitality',
       img: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop',
     },
     {
       id: 'birthday',
-      name: 'Milestone Celebrations',
+      name: 'Birthday',
       tag: 'Pastel Wonderlands & Electric Rooftops',
       img: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1000&auto=format&fit=crop',
     },
     {
-      id: 'corporate',
-      name: 'Corporate Summits',
+      id: 'conference_shoot',
+      name: 'Conference Shoot',
       tag: 'Dynamic Keynotes & High-Energy Galas',
       img: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1000&auto=format&fit=crop',
     },

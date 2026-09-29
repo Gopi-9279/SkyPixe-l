@@ -116,11 +116,11 @@ export const Footer: React.FC = () => {
               Portfolio Categories
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '14px', color: 'var(--text-secondary)' }}>
+              <li><Link to="/portfolio?category=engagement" style={{ transition: 'color var(--duration-fast)' }}>Engagement</Link></li>
               <li><Link to="/portfolio?category=wedding" style={{ transition: 'color var(--duration-fast)' }}>Weddings</Link></li>
-              <li><Link to="/portfolio?category=hotel" style={{ transition: 'color var(--duration-fast)' }}>Hotels & Luxury Resorts</Link></li>
-              <li><Link to="/portfolio?category=birthday" style={{ transition: 'color var(--duration-fast)' }}>Birthday & Milestone Parties</Link></li>
-              <li><Link to="/portfolio?category=corporate" style={{ transition: 'color var(--duration-fast)' }}>Corporate Summits & Galas</Link></li>
-              <li><Link to="/portfolio?category=other" style={{ transition: 'color var(--duration-fast)' }}>Aerial & Commercial Productions</Link></li>
+              <li><Link to="/portfolio?category=maternity_baby_shoot" style={{ transition: 'color var(--duration-fast)' }}>Maternity / Baby Shoot</Link></li>
+              <li><Link to="/portfolio?category=conference_shoot" style={{ transition: 'color var(--duration-fast)' }}>Conference Shoot</Link></li>
+              <li><Link to="/portfolio?category=event_drone_coverage" style={{ transition: 'color var(--duration-fast)' }}>Event Shoot/Drone Coverage</Link></li>
             </ul>
           </div>
 
