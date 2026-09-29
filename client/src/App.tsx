@@ -17,6 +17,7 @@ import { ContactPage } from './pages/ContactPage.js';
 // Motion & FX Utilities
 import { CustomCursor } from './components/common/CustomCursor.js';
 import { RouteTransition } from './components/common/RouteTransition.js';
+import { ScrollToTop } from './components/common/ScrollToTop.js';
 
 // Admin Components & Pages
 import { AdminLayout } from './components/layout/AdminLayout.js';
@@ -50,6 +51,7 @@ export const App: React.FC = () => {
   return (
     <AuthProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           {/* Public Website Routes */}
           <Route element={<PublicLayout />}>
