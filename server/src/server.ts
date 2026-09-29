@@ -19,6 +19,10 @@ import settingsRoutes from './routes/settingsRoutes.js';
 
 const app = express();
 
+// Trust proxy is required when hosted on platforms like Render or Heroku
+// to correctly identify the protocol (HTTPS) and allow secure cookies.
+app.set('trust proxy', 1);
+
 // Security and utility middleware
 app.use(
   helmet({

@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { ENV } from '../server/src/config/env.js';
 
 async function test() {
   try {
