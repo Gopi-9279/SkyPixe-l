@@ -5,11 +5,6 @@ import helmet from 'helmet';
 import { ENV } from './config/env.js';
 import { connectDB, isDbConnected } from './config/db.js';
 import { errorHandler } from './middleware/errorHandler.js';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 import authRoutes from './routes/authRoutes.js';
 import albumRoutes from './routes/albumRoutes.js';
@@ -63,16 +58,6 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/instagram', instagramRoutes);
 app.use('/api/showcase', showcaseRoutes);
 app.use('/api/settings', settingsRoutes);
-
-// Serve frontend in production
-if (ENV.NODE_ENV === 'production') {
-  const clientBuildPath = path.join(__dirname, '../../client/dist');
-  app.use(express.static(clientBuildPath));
-
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(clientBuildPath, 'index.html'));
-  });
-}
 
 // Error Handler
 app.use(errorHandler);
