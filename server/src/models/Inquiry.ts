@@ -18,7 +18,8 @@ export interface IInquiry extends Document {
     | 'conference_shoot'
     | 'model_portfolio'
     | 'music_video_shoot'
-    | 'event_drone_coverage';
+    | 'event_drone_coverage'
+    | 'restaurant_shoot';
   eventDate?: Date;
   venue?: string;
   message: string;
@@ -47,6 +48,7 @@ const InquirySchema = new Schema<IInquiry>(
         'model_portfolio',
         'music_video_shoot',
         'event_drone_coverage',
+        'restaurant_shoot',
       ],
     },
     eventDate: { type: Date },

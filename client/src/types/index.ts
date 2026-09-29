@@ -10,7 +10,8 @@ export type EventCategory =
   | 'conference_shoot'
   | 'model_portfolio'
   | 'music_video_shoot'
-  | 'event_drone_coverage';
+  | 'event_drone_coverage'
+  | 'restaurant_shoot';
 
 export interface MediaItem {
   _id: string;

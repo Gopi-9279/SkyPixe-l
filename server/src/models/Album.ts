@@ -12,7 +12,8 @@ export type AlbumCategory =
   | 'conference_shoot'
   | 'model_portfolio'
   | 'music_video_shoot'
-  | 'event_drone_coverage';
+  | 'event_drone_coverage'
+  | 'restaurant_shoot';
 export interface IAlbum extends Document {
   title: string;
   slug: string;
@@ -47,6 +48,7 @@ const AlbumSchema = new Schema<IAlbum>(
         'model_portfolio',
         'music_video_shoot',
         'event_drone_coverage',
+        'restaurant_shoot',
       ],
     },
     description: { type: String, default: '' },

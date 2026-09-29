@@ -296,6 +296,7 @@ export const AlbumsPage: React.FC = () => {
                     <option value="model_portfolio">Model Portfolio</option>
                     <option value="music_video_shoot">Music Video Shoot</option>
                     <option value="event_drone_coverage">Event Shoot/Drone coverage</option>
+                    <option value="restaurant_shoot">Restaurant Shoot</option>
                   </select>
                 </div>
 

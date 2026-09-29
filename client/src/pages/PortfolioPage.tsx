@@ -28,6 +28,7 @@ export const PortfolioPage: React.FC = () => {
     { id: 'model_portfolio', label: 'Model Portfolio' },
     { id: 'music_video_shoot', label: 'Music Video Shoot' },
     { id: 'event_drone_coverage', label: 'Event Shoot/Drone coverage' },
+    { id: 'restaurant_shoot', label: 'Restaurant Shoot' },
   ];
 
   useEffect(() => {
