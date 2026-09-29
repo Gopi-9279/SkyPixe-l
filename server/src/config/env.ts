@@ -25,7 +25,7 @@ export const ENV = {
   EMAIL_USER: requiredEnv('EMAIL_USER'),
   EMAIL_PASS: requiredEnv('EMAIL_PASS'),
   EMAIL_TO: requiredEnv('EMAIL_TO'),
-  INSTAGRAM_ACCESS_TOKEN: requiredEnv('INSTAGRAM_ACCESS_TOKEN'),
+  INSTAGRAM_ACCESS_TOKEN: process.env.INSTAGRAM_ACCESS_TOKEN || '',
 };
 
 if (!Number.isInteger(ENV.EMAIL_PORT) || ENV.EMAIL_PORT <= 0) {
